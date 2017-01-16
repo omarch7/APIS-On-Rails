@@ -35,6 +35,7 @@ gem 'jquery-rails'
 # API Gems
 gem 'active_model_serializers'
 
+gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -43,7 +44,8 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'sqlite3'
 
-  gem "rspec-rails", "~> 2.14"
+  gem "rspec", "~> 3.5"
+  gem "rspec-rails", "~> 3.5"
   gem "factory_girl_rails"
   gem 'ffaker'
 end
