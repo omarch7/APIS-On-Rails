@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -49,6 +49,12 @@ group :development, :test do
   gem "factory_girl_rails"
   gem 'ffaker'
   gem 'shoulda-matchers'
+
+  gem 'sabisu_rails', github: "jvrsgsty/sabisu-rails"
+  gem 'compass-rails'
+  gem 'furatto'
+  gem 'font-awesome-rails'
+  gem 'simple_form'
 end
 
 group :development do
