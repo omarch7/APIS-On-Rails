@@ -33,4 +33,14 @@ RSpec.describe Api::V1::SessionsController, type: :controller do
       it { expect(response).to have_http_status(422) }
     end
   end
+
+  describe "DELETE #destroy" do
+    before(:each) do
+      @user = FactoryGirl.create :user
+      sign_in @user
+      delete :destroy, params: { id: @user.auth_token }
+    end
+
+    it { expect(response).to have_http_status(204) }
+  end
 end
