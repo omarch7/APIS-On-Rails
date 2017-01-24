@@ -51,6 +51,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'rspec-collection_matchers'
   gem 'database_cleaner'
+  gem "email_spec"
 end
 
 group :development do
